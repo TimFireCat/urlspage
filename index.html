@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="nl" >
+  
+  <head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Tim Brands">
+    <meta name="keywords" content="links">
+    <meta name="description" content="Hier staan handige links naar verschillende pagina's.">
+    <meta name="color-scheme" content="dark light">
+	  <title>urls page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	  <link id="cssLink" href="" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body onload="checkDarkMode(); setup()">
+    <script src="script.js"></script>
+
+	  <div id="wrapper">
+      <button onclick="darkModeOn()">Dark Mode</button>
+      <button onclick="darkModeOff()">Light Mode</button> <br> <br>
+
+		  <a href="https://repl.it/@TimBrands/urlspage" id="bewerkLink" target="_blank">
+        Bewerk deze pagina.
+      </a> <br>
+      <a href="google.html" target="_blank">Google</a> <br>
+      <a href="googled3.html" target="_blank">Google d3</a> <br>
+      <a href="googled3beta" target="_blank">Google d3 beta</a> <br>
+      <a href="googled3offline.html" target="_blank">Google d3 offline</a> <br>
+      
+      <h2 class="w3schools button" id="w3schools_header">W3schools</h2>
+      <div class="bedrijf" id="w3schools_division">
+        <a href="https://www.w3schools.com/" class="w3schools" target="_blank">home</a> <br>
+        <a href="https://www.w3schools.com/html/default.asp" class="w3schools" target="_blank">HTML home</a> <br>
+        <a href="https://www.w3schools.com/css/default.asp" class="w3schools" target="_blank">CSS home</a> <br>
+        <a href="https://www.w3schools.com/js/default.asp" class="w3schools" target="_blank">JS home</a> <br>
+        <a href="https://www.w3schools.com/python/default.asp" class="w3schools" target="_blank">Python home</a> <br>
+        <a href="https://www.w3schools.com/colors/default.asp" class="w3schools" target="_blank">Colors home</a>
+      </div>
+
+      <h2 class="button" id="HSL_header">Het Stedelijk Lyceum</h2>
+      <div class="bedrijf" id="HSL_division">
+
+        <h3 class="button" id="roostersite_header">Roostersite</h3>
+        <div class="onderdeel" id="roostersite_division" style="display:none;">
+          <a href="https://roosters.hetstedelijk.nl" target="_blank">algemeen</a> <br>
+          <a href="https://roosters.hetstedelijk.nl/kottenpark/" target="_blank">Kottenpark</a> <br>
+          <a href="https://roosters.hetstedelijk.nl/kottenpark/indbasKO/236.html" target="_blank">236</a> <br>
+          <a href="https://roosters.hetstedelijk.nl/kottenpark/indbasKO/237.html" target="_blank">237</a> <br>
+          <a href="https://roosters.hetstedelijk.nl/kottenpark/indbasKO/336.html" target="_blank">336</a> <br>
+          <a href="https://roosters.hetstedelijk.nl/kottenpark/indbasKO/337.html" target="_blank">337</a> <br>
+
+        </div>
+
+        <h3 id="infokanaal_header" class="button">infokanaal</h3>
+        <div id="infokanaal_division" class="onderdeel">
+          <a href="https://hetstedelijk.info-kanaal.nl" target="_blank">algemeen</a> <br>
+          <a href="https://hetstedelijk.info-kanaal.nl/webview/kottenpark" target="_blank">Kottenpark</a> <br>
+        </div>
+
+        <h3 id="somtoday_header" class="somtoday button">Somtoday</h3>
+        <div id="somtoday_division" class="onderdeel">
+          <a href="http://www.somtoday.nl" class="somtoday" target="_blank">www.Somtoday.nl</a> <br>
+          <a href="http://somtoday.nl" class="somtoday" target="_blank">Somtoday.nl</a> <br>
+          <a href="https://elo.somtoday.nl/home/news" class="somtoday" target="_blank">elo.somtoday.nl/home/news</a> <br>
+          <a href="https://elo.somtoday.nl/home/roster" class="somtoday" target="_blank">elo.somtoday.nl/home/roster</a> <br>
+          <a href="https://elo.somtoday.nl/home/grades" class="somtoday" target="_blank">elo.somtoday.nl/home/grades</a> <br>
+        </div>
+
+      </div>
+
+      <h2 id="studiewijzerplus_header" class="button">Studiewijzer plus</h2>
+      <div id="studiewijzerplus_division" class="bedrijf">
+        <a href="https://www.studiewijzerplus.nl/" target="_blank">Startpagina</a> <br>
+        <a href="https://www.studiewijzerplus.nl/my/" target="_blank">Mijn startpagina</a> <br>
+        <a href="https://www.studiewijzerplus.nl/course/index.php?categoryid=112" target="_blank">Kottenpark 5 VWO</a> <br>
+
+        <h3 id="studiewijzers_header" class="button">Studiewijzers</h3>
+        <div id="studiewijzers_division" class="onderdeel">
+          <a href="https://www.studiewijzerplus.nl/course/view.php?id=5500" target="_blank">Wiskunde B trimester 1</a> <br>
+          <a href="https://www.studiewijzerplus.nl/course/view.php?id=7192" target="_blank">Wiskunde D trimester 1</a> (4 VWO) <br>
+          <a href="https://www.studiewijzerplus.nl/course/view.php?id=7874" target="_blank">Wiskunde D trimester 1</a> (5 VWO)<br>
+          <a href="https://www.studiewijzerplus.nl/course/view.php?id=8570" target="_blank">Natuurkunde</a> <br>
+          <a href="https://www.studiewijzerplus.nl/course/view.php?id=9708" target="_blank">Antwoorden wiskunde B</a> <br>
+          <a href="https://www.studiewijzerplus.nl/course/view.php?id=9779" target="_blank">Scheikunde trimester 1</a> <br>
+          <a href="https://www.studiewijzerplus.nl/course/view.php?id=9878" target="_blank">Antwoorden wiskunde D</a> <br>
+        </div>
+      </div>
+
+      <h2 id="wrts_header" class="wrts_link button">WRTS</h2>
+      <div id="wrts_division" class="bedrijf">
+
+        <a href="https://leren.wrts.nl" class="wrts_link" target="_blank">leren.wrts.nl</a> <br>
+        <a href="https://leren.wrts.nl/created" class="wrts_link" target="_blank">Gemaakte lijsten</a><br>
+
+      </div>
+
+      <h2 id="p2000_header" class="button">P2000</h2>
+      <div id="p2000_division" class="bedrijf">
+        <a href="http://www.p2000-online.net/" target="_blank">home</a> <br>
+        <a href="http://www.p2000-online.net/twentef.html" target="_blank">Twente</a> <br>
+        <a href="http://www.p2000-online.net/expert.html" target="_blank">Expert mode</a> <br>
+      </div>
+
+      <h2 id="spotify_header" class="spotify_link button">Spotify</h2>
+      <div id="spotify_division" class="bedrijf">
+        <a href="https://www.spotify.com" class="spotify_link" target="_blank">Home</a> <br>
+        <a href="https://open.spotify.com" class="spotify_link" target="_blank">Web player</a> <br>
+        <!--<a href="android://79xEc7TXh3cNp5rV9kci8i6AYyfPq8BmRomGIiNpLtXCAx3qy5RICnOQLbMJaQ1UNGV_N7sSK1dLpTmEZQ8csg==@com.spotify.music/" class="spotify_link">Spotify Android 2</a> <br>-->
+      </div>
+
+      <h2 id="overige_header" class="button">Overige</h2>
+      <div id="overige_division" class="bedrijf">
+        <a href="https://www.cerego.com" target="_blank">www.cerego.com</a> <br>
+        <a href="https://cerego.com" target="_blank">cerego.com</a> <br>
+        <a href="https://www.repl.it" target="_blank">www.repl.it</a> <br>
+        <a href="http://www.logo.de" target="_blank">http://www.logo.de</a> <br>
+        <a href="https://www.ta-help.me" target="_blank">TA-help.me</a> <br> 
+        <a href="https://www.joinpd.com" target="_blank">Join PD</a> <br>
+        <a href="https://web.whatsapp.com" target="_blank">WhatsApp Web</a> <br>
+        <a href="http://www.earz.nl" target="_blank">http://www.earz.nl</a> <br>
+        <a href="https://www.trello.com" target="_blank">Trello</a><br>
+        <a href="https://www.top40.nl" target="_blank">Top 40</a> <br>
+        <a href="https://portal.apprenticexm.nl" target="_blank">Apprentice portal</a> <br>
+      </div>
+      
+    </div>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+    <br><br><br><br><br>
+
+  </body>
+
+</html>
