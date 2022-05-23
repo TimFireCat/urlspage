@@ -1,0 +1,99 @@
+
+
+/* Omdat dit niet altijd vanzelf goed gaat, moet het hier nog bij.*/
+body{
+  background-color: white;
+  color: black;
+}
+
+/* Dan komen alle speciale kleuren voor sites.*/
+.w3schools{
+  color: #04AA6D;
+}
+
+.somtoday{
+  color: #004f9c;
+}
+
+.wrts_link{
+  color: #652ea3;
+}
+
+.spotify_link{
+  color: #1db954;
+}
+
+/* Dit zijn de kleuren voor de google sites.*/
+.google_blue a{
+  color: #4285f4;
+}
+
+.google_green a{
+  color: #34a853;
+}
+
+.google_yellow a{
+  color: #fbbc05;
+}
+
+.google_red a{
+  color: #ea4335;
+} 
+
+.google_purple a{
+  color: #673ab7
+}
+
+.gmail_color a{
+  color: #d93025
+}
+
+.meet_color a{
+  color: #00796b; 
+}
+
+.calendar_color a, .translate_color a{
+  color: #1a73e8;
+}
+
+.red a{
+  color: #FF0000;
+}
+
+.contacts_color a{
+  color: #1967d2;
+}
+
+.classroom_color a{
+  color: #26A668;
+}
+
+/* Als laatste komen de speciale kleuren voor de classrooms.*/
+.classroom_black a{
+  color: #202124;
+}
+
+.classroom_darkblue a{
+  color: #174ea6;
+}
+
+.classroom_orange a{
+  color: #c26401;
+  /*background-color: #feefe3;*/
+}
+
+.classroom_cyan a{
+  color: #007b83;
+}
+
+.classroom_green a{
+  color: #137333;
+}
+
+.classroom_blue a{
+  color: #1967d2;
+}
+
+.classroom_pink{
+  color: #b80672;
+}

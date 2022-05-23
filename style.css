@@ -1,0 +1,23 @@
+/* Dit zijn de instellingen die altijd geladen moeten worden, ongeacht het kleurenschema*/
+
+/* Eerst alles voor de tabel*/
+table{
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+td{
+  border: 1px solid;
+  width: 150px;
+}
+
+/*Voor de knoppen willen we een andere cursor.*/
+.button{
+  cursor: pointer;
+}
+
+/* Dit zorgt ervoor dat linkjes niet meer blauw of paars worden, want
+ dat is niet mooi*/
+a{
+  color: inherit;
+}
