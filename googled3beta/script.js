@@ -1,11 +1,18 @@
 // Dit is het script waarin alle functies staan die niet van d3 afhankelijk zijn.
 // Dit zijn alle variabelen
 var mode;
+var root;
 var hidebleDivisions = ["w3schools", "HSL", "roostersite", "infokanaal", "somtoday", "studiewijzerplus", "studiewijzers", "wrts", "p2000", "spotify", "overige"];
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 var mode = urlParams.get('mode')
 // Bron: https://www.sitepoint.com/get-url-parameters-with-javascript/
+
+function root(location){
+  console.log("location: "+location)
+  root = location;
+  console.log("root: "+root)
+}
 
 // Dit is de functie die bepaalt of alles donker moet zijn.
 function checkDarkMode(){
@@ -26,12 +33,12 @@ function checkDarkMode(){
 function darkModeOn(){
   // Eerst moeten we kijken of de browser meewerkt aan de dark mode.
   if (window.matchMedia('(prefers-color-scheme: dark)').matches){
-    document.getElementById("cssLink").setAttribute("href", "styleDarkMode.css");
+    document.getElementById("cssLink").setAttribute("href", root+"styleDarkMode.css");
     document.getElementById("cssExtensionLink").setAttribute("href", "");
     // Dan hoefen we niet alles zelf op te geven.
   } else {
     document.getElementById("cssLink").setAttribute("href", "styleDarkMode.css");
-    document.getElementById("cssExtensionLink").setAttribute("href", "styleDarkModeExtension.css");
+    document.getElementById("cssExtensionLink").setAttribute("href", root+"styleDarkModeExtension.css");
     // Anders moet dat wel.
   }
 }
@@ -40,12 +47,12 @@ function darkModeOn(){
 function darkModeOff(){
    // Eerst moeten we kijken of de browser meewerkt aan de light mode.
   if (window.matchMedia('(prefers-color-scheme: light)').matches){
-    document.getElementById("cssLink").setAttribute("href", "styleLightMode.css");
+    document.getElementById("cssLink").setAttribute("href", root+"styleLightMode.css");
     document.getElementById("cssExtensionLink").setAttribute("href", "");
     // Dan hoefen we niet alles zelf op te geven.
   } else {
-    document.getElementById("cssLink").setAttribute("href", "styleLightMode.css");
-    document.getElementById("cssExtensionLink").setAttribute("href", "styleLightModeExtension.css");
+    document.getElementById("cssLink").setAttribute("href", root+"styleLightMode.css");
+    document.getElementById("cssExtensionLink").setAttribute("href", root+"styleLightModeExtension.css");
     // Anders moet dat wel.
   }
 }

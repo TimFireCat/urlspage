@@ -1,5 +1,7 @@
 /* Dit zijn de instellingen die altijd geladen moeten worden, ongeacht het kleurenschema*/
 
+/* Beta */
+
 /* Eerst alles voor de tabel*/
 table{
   border: 1px solid;
@@ -19,5 +21,5 @@ td{
 /* Dit zorgt ervoor dat linkjes niet meer blauw of paars worden, want
  dat is niet mooi*/
 a{
-  color: inherit;
+  color: red; /* Dit is voor test doeleinden*/
 }
