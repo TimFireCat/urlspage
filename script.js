@@ -2,7 +2,8 @@
 // Dit zijn alle variabelen
 var mode;
 var root;
-var hidebleDivisions = ["w3schools", "HSL", "roostersite", "infokanaal", "somtoday", "studiewijzerplus", "studiewijzers", "wrts", "p2000", "spotify", "overige"];
+var hidebleDivisions = ["ut", "kick-in", "w3schools", "p2000", "spotify", "overige"];
+
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 var mode = urlParams.get('mode')

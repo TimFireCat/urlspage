@@ -37,6 +37,7 @@ var googleSites = [
   ["google_drive", "drive.google.com", "https://drive.google.com", [1,1,1,1], ""],
   ["google_classroom", "classroom.google.com", "https://classroom.google.com", [1,1,0,1], "classroom_color"],
   ["google_mail", "mail.google.com", "https://mail.google.com", [1,1,0,1], "gmail_color"],
+  ["inbox", "inbox.google.com", "https://inbox.google.com", [1,0,0,0], "gmail_color"],
   ["google_meet", "meet.google.com", "https://meet.google.com", [1,1,0,0], "meet_color"],
   ["google_calendar", "calendar.google.com", "https://calendar.google.com", [1,1,1,1], "calendar_color"],
   ["youtube", "youtube.com", "https://www.youtube.com", [1,0,0,0], "red"],
