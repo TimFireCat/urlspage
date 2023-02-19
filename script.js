@@ -38,7 +38,7 @@ function darkModeOn(){
     document.getElementById("cssExtensionLink").setAttribute("href", "");
     // Dan hoefen we niet alles zelf op te geven.
   } else {
-    document.getElementById("cssLink").setAttribute("href", "styleDarkMode.css");
+    document.getElementById("cssLink").setAttribute("href", root+"styleDarkMode.css");
     document.getElementById("cssExtensionLink").setAttribute("href", root+"styleDarkModeExtension.css");
     // Anders moet dat wel.
   }
