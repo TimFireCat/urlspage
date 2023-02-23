@@ -5,25 +5,6 @@ function allOnBlank(){
   d3.selectAll("a").attr("target", "_blank");
 }
 
-// Dit zijn de benodigde variabelen.
-var classrooms = [
-  //[id, name, url, color],
-  ["KO6V_wisb1_20212022", "KO6V.wisb1&nbsp(2021/2022)", "MzE5NzY5NzkxMDYx", "blue"],
-  ["KO6V_wisb2_20212022", "KO6V.wisb2&nbsp(2021/2022)", "NDI2Njg1NzA5NTA2", "green"],
-  ["KO6V_algemeen_20212022", "Info&nbsp6&nbspVwo", "NDIxNTgzNTUzMjAw", "green"],
-  ["KO6V_na_20212022", "KO6V.na&nbsp(2021/2022)", "MzgzMDkxNTk0NTE1", "green"],
-  ["KO6V_dutl1_20212022", "KO6v.dutl1&nbsp(2021/2022)", "Mzk4MjIxMTczODQy", "orange"],
-  ["KO6V1_netl_20212022", "KO6V1.netl&nbsp(2021/2022)", "MzgxNTMyMTA2MzE1" ,"blue"],
-  ["KO6V1_entl_20212022", "KO6V1.entl&nbsp(2021-2022)", "MjI2ODYzMTAwMzk0", "black"],
-  ["KO6V_mu1_20212022", "KO6V.mu1&nbsp(2021/2022)", "Mzg4NzYwOTIwMjI4", "black"],
-  ["KO06V_schk1_20212022", "KO06V.schk1&nbsp(2021/2022)", "MzgyMDkzMTc4OTk3", "black"],
-  ["KO06V_in_20212022", "KO06V.in&nbsp(2021/2022)", "MzgxOTE1NzQ5NjM3" ,"black"],
-  ["profielwerkstuk", "profielwerkstuk", "MzY3NDE4Mjg2Nzg2" ,"blue"],
-  ["Mentor", "Mentor&nbsp2020/2021", "MTUyODMyNjg0NTQ5" ,"blue"],
-  ["KO5V4_entl_20202021", "KO5V4.entl&nbsp(2020/2021)", "MTQ4MTY3NjEwOTk1" ,"cyan"],
-  ["KO5V_dutl1_20202021", "KO5V.dutl1&nbsp(2020/2021)", "MTI2NzIwNzI2ODUy", "green"],
-];
-
 var googleSites = [
   //[id, name, url, [normal link possible, /?authuser possible, /u/ possible, /a/ possible], color class]
   ["google_com", "www.google.com", "https://www.google.com", [1,1,0,0], ""],
@@ -113,56 +94,6 @@ function createGoogleDataNormal(id, name, link, accountSelectors) {
     .append("td")
     .html(name)      
   }
-}
-
-// Dit is de functie om de google tabel te maken
-function createClassroomTable(){  
-  var i;
-  // Voor iedere rij in de array wordt er ook een rij aan de tabel toegevoegd.
-  for (i = 0; i < classrooms.length; i++) {
-    createClassroomRow(classrooms[i][0], classrooms[i][1], classrooms[i][2], classrooms[i][3])
-  }
-}
-
-// Dit is de functie om de rij te maken.
-function createClassroomRow(id, name, link, color){
-  // Eerste de rij zelf...
-  d3.select("#classroomTable")
-    .append("tr")
-    .attr("id", id+'_row')
-    .classed("classroom_"+color, true);
-  // ... en daarna alle cellen met de gegevens.
-  createClassroomDataNormal(id, name, link);
-  createClassroomDataEmpty(id);
-  createClassroomData(id, link, "/u/0");
-  createClassroomDataEmpty(id);
-  createClassroomData(id, link, "/u/1");
-  createClassroomData(id, link, "/a/hetstedelijklyceum.nl");
-}
-
-// Dit zijn de functies om verschillende soorten cellen te maken.
-function createClassroomDataNormal(id, name, link){
-  d3.select("#"+id+"_row")
-    .append("td")
-    .append("a")
-    .html(name)
-    .attr("href","https://classroom.google.com/c/"+link)
-
-}
-
-function createClassroomData(id, link, extension){
-  d3.select("#"+id+"_row")
-  .append("td")
-  .append("a")
-  .html(extension)
-      .attr("href", "https://classroom.google.com" + extension + "/c/" + link)
-}
-
-function createClassroomDataEmpty(id){
-    d3.select("#"+id+"_row")
-      .append("td")
-      .append("i")
-      .html("Bestaat&nbspniet.")  
 }
 
 // Dit is de functie om bepaalde onderdelen te laten verdwijnen.
