@@ -2,7 +2,7 @@
 // Dit zijn alle variabelen
 var mode;
 var root;
-var hidebleDivisions = ["ut", "kick-in", "w3schools", "p2000", "spotify", "overige", "module-3"];
+var hidebleDivisions = ["ut", "w3schools", "p2000", "spotify", "overige", "module-3"];
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
