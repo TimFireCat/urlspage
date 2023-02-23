@@ -1,0 +1,120 @@
+/* Colors that are always correct. */
+.w3schools{
+    color: #04AA6D;
+  }
+
+  /* Dit zijn de kleuren voor de google sites.*/
+  
+  
+  .google_blue a{
+    color: #4285f4;
+  }
+
+
+  .google_green a{
+    color: #34a853;
+  }
+
+
+  
+  .google_yellow a{
+    color: #fbbc05;
+  }
+  
+  .google_red a{
+    color: #ea4335;
+  } 
+  
+  .google_purple a{
+    color: #673ab7
+  }
+  
+  .gmail_color a{
+    color: #d93025
+  }
+  
+  .meet_color a{
+    color: #00796b; 
+  }
+  
+
+ 
+  .calendar_color a, .translate_color a{
+    color: #1a73e8;
+  }
+
+
+  .red a{
+    color: #FF0000;
+  }
+  
+  .contacts_color a{
+    color: #1967d2;
+  }
+  
+  .classroom_color a{
+    color: #26A668;
+  }
+
+
+/* Dark mode*/
+/* Dit is voor de darkmode. Daarin zijn alle kleuren anders*/
+
+/* Dan komen alle speciale kleuren voor sites.*/
+
+@media (prefers-color-scheme: dark) {
+  .somtoday{
+    color: #6CC3C6;
+  }
+  
+  .wrts_link{
+    color: #8952da;
+  }
+  
+  .spotify_link{
+    color: #1ed760;
+  }  
+}
+  
+@media (prefers-color-scheme: light) {
+  
+  .somtoday{
+    color: #004f9c;
+  }
+  
+  .wrts_link{
+    color: #652ea3;
+  }
+  
+  .spotify_link{
+    color: #1db954;
+  } 
+}
+  
+
+
+
+
+/* Dit zijn de instellingen die altijd geladen moeten worden, ongeacht het kleurenschema*/
+
+/* Eerst alles voor de tabel*/
+table{
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  
+  td{
+    border: 1px solid;
+    width: 150px;
+  }
+  
+  /*Voor de knoppen willen we een andere cursor.*/
+  .button{
+    cursor: pointer;
+  }
+  
+  /* Dit zorgt ervoor dat linkjes niet meer blauw of paars worden, want
+   dat is niet mooi*/
+  a{
+    color: inherit;
+  }
