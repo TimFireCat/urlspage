@@ -5,7 +5,7 @@ function allOnBlank(){
   d3.selectAll("a").attr("target", "_blank");
 }
 
-var googleSites = [
+var microsoftSites = [
   //[id, name, url, [normal link possible, /?auth possible, .live.com possible, .office.com possible], color class],
   ["outlook", "Outlook", "https://outlook", [2,0,1,1], ""],
   ["onedrive", "Onedrive", "https://onedrive", [2,0,1,0], ""],
@@ -20,37 +20,37 @@ var googleSites = [
 ]
 
 
-// Dit is de funcie om de google tabel te maken.
-function createGoogleTable(){ 
+// Dit is de funcie om de Microsoft tabel te maken.
+function createMicrosoftTable(){ 
   var i;
-  for (i = 0; i < googleSites.length; i++) {
-    createGoogleRow(googleSites[i][0], googleSites[i][1], googleSites[i][2], googleSites[i][3], googleSites[i][4])
+  for (i = 0; i < microsoftSites.length; i++) {
+    createMicrosoftRow(microsoftSites[i][0], microsoftSites[i][1], microsoftSites[i][2], microsoftSites[i][3], microsoftSites[i][4])
   }
 }
 
-// Dit is de functie om een rij van de google tabel te maken.
-function createGoogleRow(id, name, link, accountSelectors, color){
+// Dit is de functie om een rij van de Microsoft tabel te maken.
+function createMicrosoftRow(id, name, link, accountSelectors, color){
   // Eerst wordt de rij zelf gemaakt.
   if (color){
-    d3.select("#googleTable")
+    d3.select("#microsoftTable")
       .append("tr")
       .attr("id", id+"_row")
       .classed(color, true)
   }
   else{
-    d3.select("#googleTable")
+    d3.select("#microsoftTable")
       .append("tr")
       .attr("id", id+"_row")
   }  
   // Daarna worden er 6 cellen aan de rij toegevoegd.
-  createGoogleDataNormal(id, name, link, accountSelectors);
-  createGoogleData(id, link, accountSelectors, ".live.com", 2);
-  createGoogleData(id, link, accountSelectors, "?auth=1", 1);
-  createGoogleData(id, link, accountSelectors, ".office.com", 3);
-  createGoogleData(id, link, accountSelectors, "?auth=2", 1);
+  createMicrosoftDataNormal(id, name, link, accountSelectors);
+  createMicrosoftData(id, link, accountSelectors, ".live.com", 2);
+  createMicrosoftData(id, link, accountSelectors, "?auth=1", 1);
+  createMicrosoftData(id, link, accountSelectors, ".office.com", 3);
+  createMicrosoftData(id, link, accountSelectors, "?auth=2", 1);
 }
 
-function createGoogleData(id, link, accountSelectors, extension, accountSelector){  
+function createMicrosoftData(id, link, accountSelectors, extension, accountSelector){  
   if (accountSelectors[accountSelector] == 1) {
     d3.select("#"+id+"_row")
       .append("td")
@@ -66,7 +66,7 @@ function createGoogleData(id, link, accountSelectors, extension, accountSelector
   }  
 }
 
-function createGoogleDataNormal(id, name, link, accountSelectors) {
+function createMicrosoftDataNormal(id, name, link, accountSelectors) {
   if (accountSelectors[0] == 1){
     d3.select("#"+id+"_row")
     .append("td")
