@@ -62,7 +62,6 @@ function createGoogleRow(id, name, link, accountSelectors, color){
   createGoogleData(id, link, accountSelectors, "/u/0", 2)
   createGoogleData(id, link, accountSelectors, "/?authuser=1", 1)
   createGoogleData(id, link, accountSelectors, "/u/1", 2)
-  createGoogleData(id, link, accountSelectors, "/a/hetstedelijklyceum.nl", 3)
 }
 
 function createGoogleData(id, link, accountSelectors, extension, accountSelector){  
