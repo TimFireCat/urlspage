@@ -3,6 +3,17 @@
     "test": "test2",
     "websites": [
         {
+            "id": "whatsapp_web",
+            "name": "WhatsApp Web",
+            "url": "https://web.whatsapp.com",
+            "category": "overige"
+        },{
+            "id": "trello",
+            "name": "Trello",
+            "url": "https://www.trello.com",
+            "category":"overige"
+        },
+        {
             "id": "top40",
             "name": "Top 40",
             "url": "https://www.top40.nl",
