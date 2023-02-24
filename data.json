@@ -1,0 +1,19 @@
+{
+
+    "test": "test2",
+    "websites": [
+        {
+            "id": "top40",
+            "name": "Top 40",
+            "url": "https://www.top40.nl",
+            "category": "overige"
+        },
+        {
+            "id": "github",
+            "name": "Github",
+            "url": "https://www.github.com",
+            "category": "overige"
+        }
+    ]
+
+}

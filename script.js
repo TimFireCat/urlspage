@@ -58,7 +58,17 @@ function darkModeOff(){
   }
 }
 
-function setup(){
+async function setup(){
+  fetchInput = await fetch('./data.json')
+  data = await fetchInput.json();
+
+  websites = data.websites;
+  websites.forEach(element => {
+    addWebsite(element.id, element.name, element.url, element.category)
+  });
+  
+  
+
   var i;
   for (i = 0; i < hidebleDivisions.length; i++) {
     headerId = hidebleDivisions[i]+"_header";
@@ -75,4 +85,15 @@ function hide(id){
   else {
     document.getElementById(id).style.display = "none"
   }
+}
+
+function addWebsite(id, name, url, category) {
+  node = document.createElement("a")
+  document.getElementById(category + "_division").appendChild(node);
+  // node.id = id;
+  node.innerHTML = name;
+  node.href = url;
+  node.target = "_blank";
+  br = document.createElement("br");
+  document.getElementById(category + "_division").appendChild(br);
 }
