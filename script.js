@@ -34,13 +34,11 @@ function checkDarkMode(){
 function darkModeOn(){
   // Eerst moeten we kijken of de browser meewerkt aan de dark mode.
   if (window.matchMedia('(prefers-color-scheme: dark)').matches){
-    document.getElementById("cssLink").setAttribute("href", root+"styleDarkMode.css");
-    document.getElementById("cssExtensionLink").setAttribute("href", "");
-    // Dan hoefen we niet alles zelf op te geven.
+    document.getElementById("cssLink").setAttribute("href", root+"styleAutomatic.css");
+    // Dan kan de standaard stylesheet worden gebruikt.
   } else {
     document.getElementById("cssLink").setAttribute("href", root+"styleDarkMode.css");
-    document.getElementById("cssExtensionLink").setAttribute("href", root+"styleDarkModeExtension.css");
-    // Anders moet dat wel.
+    // Anders moet de handmatige stylesheet gebruikt worden.
   }
 }
 
@@ -48,13 +46,11 @@ function darkModeOn(){
 function darkModeOff(){
    // Eerst moeten we kijken of de browser meewerkt aan de light mode.
   if (window.matchMedia('(prefers-color-scheme: light)').matches){
-    document.getElementById("cssLink").setAttribute("href", root+"styleLightMode.css");
-    document.getElementById("cssExtensionLink").setAttribute("href", "");
-    // Dan hoefen we niet alles zelf op te geven.
+    document.getElementById("cssLink").setAttribute("href", root+"styleAutomatic.css");
+    // Dan kan de standaard stylesheet worden gebruikt.
   } else {
     document.getElementById("cssLink").setAttribute("href", root+"styleLightMode.css");
-    document.getElementById("cssExtensionLink").setAttribute("href", root+"styleLightModeExtension.css");
-    // Anders moet dat wel.
+    // Anders moet de handmatige stylesheet gebruikt worden.
   }
 }
 

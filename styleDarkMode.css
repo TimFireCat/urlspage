@@ -104,3 +104,10 @@
 .classroom_pink{
   color: #b80672;
 }
+
+/* Dit is een speciale toevoeging voor als browser niet de darkmode gebruiken*/
+
+body{
+  background-color: #202124;
+  color: #e8eaed;
+}
