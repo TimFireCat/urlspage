@@ -4,9 +4,16 @@ var mode;
 var root;
 var hidebleDivisions = ["ut", "w3schools", "p2000", "spotify", "overige", "module-3"];
 
+cookie = document.cookie;
+cookies = cookie.split("; ")
+cookies.forEach(handlecookie)
+console.log(cookies)
+
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
-var mode = urlParams.get('mode')
+if (urlParams.has("mode")){
+  var mode = urlParams.get('mode')
+}
 // Bron: https://www.sitepoint.com/get-url-parameters-with-javascript/
 
 function root(location){
@@ -29,17 +36,40 @@ function checkDarkMode(){
 
 
 // Dit is om alles donker te maken.
-function darkModeOn(){  
+function darkModeOn(){
+  mode = "dark";
   document.getElementById("cssLink").setAttribute("href", root+"styleDarkMode.css");
 }
 
 // Dit is om alles licht te maken.
 function darkModeOff(){
+  mode = "light";
   document.getElementById("cssLink").setAttribute("href", root+"styleLightMode.css");
 }
 
 function autoMode() {
+  mode = "auto";
   document.getElementById("cssLink").setAttribute("href", root+"styleAutomatic.css");
+}
+
+function storeMode() {
+  const d = new Date();
+  d.setTime(d.getTime() + (30*24*60*60*1000));
+  let expires = "expires="+ d.toUTCString();
+  // source: https://www.w3schools.com/js/js_cookies.asp
+  document.cookie = "mode="+mode + ";" + expires;
+}
+
+function handlecookie(cookie) {
+  console.log("Checking cookie: " + cookie);
+  split = cookie.split("=");
+  if (split.length == 2) {
+    console.log("Correct cookie length.")
+    if (split[0]== "mode") {
+      console.log("Cookie handled: mode = " + split[1])
+      mode = split[1];
+    }
+  }
 }
 
 async function setup(){
