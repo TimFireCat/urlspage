@@ -21,37 +21,25 @@ function checkDarkMode(){
     darkModeOn()    
   } else if (mode=="light"){
     darkModeOff()
-  } else if (window.matchMedia('(prefers-color-scheme: dark)').matches){
-    darkModeOn()
   } else{
-    darkModeOff()
+    autoMode()
   };
   // Bron: https://usefulangle.com/post/318/javascript-check-dark-mode-activated 
 }
 
 
 // Dit is om alles donker te maken.
-function darkModeOn(){
-  // Eerst moeten we kijken of de browser meewerkt aan de dark mode.
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches){
-    document.getElementById("cssLink").setAttribute("href", root+"styleAutomatic.css");
-    // Dan kan de standaard stylesheet worden gebruikt.
-  } else {
-    document.getElementById("cssLink").setAttribute("href", root+"styleDarkMode.css");
-    // Anders moet de handmatige stylesheet gebruikt worden.
-  }
+function darkModeOn(){  
+  document.getElementById("cssLink").setAttribute("href", root+"styleDarkMode.css");
 }
 
 // Dit is om alles licht te maken.
 function darkModeOff(){
-   // Eerst moeten we kijken of de browser meewerkt aan de light mode.
-  if (window.matchMedia('(prefers-color-scheme: light)').matches){
-    document.getElementById("cssLink").setAttribute("href", root+"styleAutomatic.css");
-    // Dan kan de standaard stylesheet worden gebruikt.
-  } else {
-    document.getElementById("cssLink").setAttribute("href", root+"styleLightMode.css");
-    // Anders moet de handmatige stylesheet gebruikt worden.
-  }
+  document.getElementById("cssLink").setAttribute("href", root+"styleLightMode.css");
+}
+
+function autoMode() {
+  document.getElementById("cssLink").setAttribute("href", root+"styleAutomatic.css");
 }
 
 async function setup(){
