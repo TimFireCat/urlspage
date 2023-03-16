@@ -3,6 +3,42 @@
     "test": "test2",
     "websites": [
         {
+            "id": "utwente_onedrive",
+            "name": "Utwente OneDrive",
+            "url": "https://universiteittwente-my.sharepoint.com/",
+            "category": "ut"
+        },
+        {
+            "id": "inter-actief",
+            "name": "Inter-Actief",
+            "url": "https://www.inter-actief.utwente.nl/",
+            "category": "ia"
+        },
+        {
+            "id": "ia",
+            "name": "IA",
+            "url": "https://www.ia.utwente.nl/",
+            "category": "ia"
+        },
+        {
+            "id": "ia_login",
+            "name": "IA - Login with UT",
+            "url": "https://www.inter-actief.utwente.nl/saml2sp/login/?next=/",
+            "category": "ia"
+        },
+        {
+            "id": "ia_activities",
+            "name": "Activities",
+            "url": "https://www.inter-actief.utwente.nl/activities/",
+            "category": "ia"
+        },
+        {
+            "id": "ia_verenigingslied",
+            "name": "Verenigingslied",
+            "url": "https://www.inter-actief.utwente.nl/about/5/association-song/",
+            "category": "ia"
+        },
+        {
             "id": "whatsapp_web",
             "name": "WhatsApp Web",
             "url": "https://web.whatsapp.com",
@@ -23,6 +59,12 @@
             "id": "github",
             "name": "Github",
             "url": "https://www.github.com",
+            "category": "overige"
+        },
+        {
+            "id": "discord_developer",
+            "name": "Discord Developer Portal",
+            "url": "https://discord.com/developers/applications",
             "category": "overige"
         }
     ]
