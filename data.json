@@ -3,12 +3,6 @@
     "test": "test2",
     "websites": [
         {
-            "id": "utwente_onedrive",
-            "name": "Utwente OneDrive",
-            "url": "https://universiteittwente-my.sharepoint.com/",
-            "category": "ut"
-        },
-        {
             "id": "inter-actief",
             "name": "Inter-Actief",
             "url": "https://www.inter-actief.utwente.nl/",
