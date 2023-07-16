@@ -60,6 +60,18 @@
             "name": "Discord Developer Portal",
             "url": "https://discord.com/developers/applications",
             "category": "overige"
+        },
+        {
+            "id": "linkedin",
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com",
+            "category": "overige"
+        },
+        {
+            "id": "huis_aan_huis",
+            "name": "Huis aan Huis Enschede",
+            "url": "https://www.huisaanhuisenschede.nl",
+            "category": "overige"
         }
     ]
 
