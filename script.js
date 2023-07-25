@@ -78,7 +78,7 @@ async function setup(){
 
   websites = data.websites;
   websites.forEach(element => {
-    addWebsite(element.id, element.name, element.url, element.category)
+    addWebsite(element.id, element.name, element.url, element.category, element.class)
   });
   
   
@@ -101,7 +101,7 @@ function hide(id){
   }
 }
 
-function addWebsite(id, name, url, category) {
+function addWebsite(id, name, url, category, class_name) {
   node = document.createElement("a")
   document.getElementById(category + "_division").appendChild(node);
   // node.id = id;
@@ -110,4 +110,7 @@ function addWebsite(id, name, url, category) {
   node.target = "_blank";
   br = document.createElement("br");
   document.getElementById(category + "_division").appendChild(br);
+  if (class_name != null) {
+    node.className = class_name
+  }
 }

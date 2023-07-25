@@ -33,6 +33,13 @@
             "category": "ia"
         },
         {
+            "id": "spotify_developer",
+            "name": "Spotify Developer",
+            "url": "https://developer.spotify.com/",
+            "category": "spotify",
+            "class" : "spotify_link"
+        },
+        {
             "id": "whatsapp_web",
             "name": "WhatsApp Web",
             "url": "https://web.whatsapp.com",
