@@ -79,6 +79,34 @@
             "name": "Huis aan Huis Enschede",
             "url": "https://www.huisaanhuisenschede.nl",
             "category": "overige"
+        },
+        {
+            "id": "lss",
+            "name": "Leitstellenspiel",
+            "url": "https://www.leitstellenspiel.de",
+            "category": "lss",
+            "class": "lss"
+        },
+        {
+            "id": "lss_einsaetze",
+            "name": "Einsätze",
+            "url": "https://www.leitstellenspiel.de/einsaetze",
+            "category": "lss",
+            "class": "lss"
+        },
+        {
+            "id": "lss_wiki",
+            "name": "Wiki",
+            "url": "https://wiki.leitstellenspiel.de",
+            "category": "lss",
+            "class": "lss"
+        },
+        {
+            "id": "lss_blog",
+            "name": "Blog",
+            "url": "https://blog.leitstellenspiel.de/blog/",
+            "category": "lss",
+            "class": "lss"
         }
     ]
 
