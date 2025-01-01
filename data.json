@@ -107,6 +107,18 @@
             "url": "https://blog.leitstellenspiel.de/blog/",
             "category": "lss",
             "class": "lss"
+        },
+        {
+            "id": "timeedit_utwente",
+            "name": "utwente",
+            "url": "https://www.timeedit.net/nl_utwente",
+            "category": "rooster"
+        },
+        {
+            "id": "timeedit_student",
+            "name": "Student",
+            "url": "https://cloud.timeedit.net/nl_utwente/web/student/",
+            "category": "rooster"
         }
     ]
 

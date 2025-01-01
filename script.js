@@ -2,7 +2,7 @@
 // Dit zijn alle variabelen
 var mode;
 var root;
-var hidebleDivisions = ["ut", "w3schools", "p2000", "spotify", "overige", "module-3", "ia"];
+var hidebleDivisions = ["ut", "w3schools", "p2000", "spotify", "overige", "module-3", "ia", "rooster"];
 
 cookie = document.cookie;
 cookies = cookie.split("; ")
